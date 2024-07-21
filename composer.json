@@ -1,0 +1,20 @@
+{
+    "version": "1.0.0",
+    "name": "paulovictor/app-php-catalog-video",
+    "description": "App with php",
+    "authors": [
+        {
+            "name": "Paulo Victor",
+            "email": "paulllo.v.m.s@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Core\\" : "src/Core"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "mockery/mockery": "^1.6"
+    }
+}
