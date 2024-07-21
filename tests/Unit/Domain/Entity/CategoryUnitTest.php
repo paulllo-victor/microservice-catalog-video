@@ -4,7 +4,7 @@
 namespace Tests\Unit\Domain\Entity;
 
 use Core\Domain\Entity\Category;
-use Core\Domain\Entity\Exception\EntityValidationException;
+use Core\Domain\Exception\EntityValidationException;
 use PHPUnit\Framework\TestCase;
 
 class CategoryUnitTest extends TestCase{

@@ -1,7 +1,7 @@
 <?php
 
 namespace Core\Domain\Entity;
-use Core\Domain\Entity\Exception\EntityValidationException;
+use Core\Domain\Exception\EntityValidationException;
 use Core\Domain\Entity\Traits\MethodsMagicsTrait;
 class Category{
 
