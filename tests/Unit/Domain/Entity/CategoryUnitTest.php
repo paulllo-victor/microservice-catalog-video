@@ -40,10 +40,22 @@ class CategoryUnitTest extends TestCase{
         $category->disable();
         $this->assertFalse($category->isActive);
     }
-    public function testUpdate(){
+    public function testeExceptionName(){
         try {
             new Category(
-                name: 'Ne'
+                name: 'N'
+            );
+
+            $this->assertTrue(false);
+        } catch (\Throwable $th) {
+            $this->assertInstanceOf(EntityValidationException::class, $th);
+        }
+    }
+    public function testeExceptionDescription(){
+        try {
+            new Category(
+                name: 'New category',
+                description: random_bytes(9999),
             );
 
             $this->assertTrue(false);
